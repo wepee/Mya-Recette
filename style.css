@@ -12,10 +12,15 @@ main {
     margin: 0 15%;
 }
 
+#description{
+    padding: 20px;
+}
+
 hr {
     border:none;
     border-top:10px dotted #9D7B35;
     width:70%;
+    margin: 30px auto;
 }
 
 h1 {
@@ -31,6 +36,7 @@ h2 {
 }
 
 h3 {
+    color: #184138;
     font-family: 'Allegreya Medium';
     text-align: center;
     font-size: xx-large;
@@ -40,6 +46,7 @@ h3 {
 
 p {
     font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
 }
 
 
@@ -66,6 +73,11 @@ p {
     width: 25%;
 }
 
+#pellicule {
+    display: block;
+    margin: 0 auto;
+}
+
 #quote {
     display: flex;
     justify-content: space-around;
@@ -77,4 +89,9 @@ p {
 
 #closequote {
     justify-content: end;
+}
+
+#avis{
+    display: flex;
+    justify-content: center;
 }
