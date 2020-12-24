@@ -129,8 +129,14 @@ p {
     justify-self: center;
 }
 
+#preparation > div:hover > p {
+    display: block;
+    color: white;
+}
+
 #preparation > div > h4 {
     text-align: center;
+    text-justify: auto;
     text-transform: uppercase;
     font-size: x-large;
 
@@ -138,6 +144,7 @@ p {
 
 #preparation > div > p {
     text-align: justify;
+    color: #11ffee00;  /* Complètement transparent */
 }
 
 
