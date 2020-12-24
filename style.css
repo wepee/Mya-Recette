@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 0;
     background: #fffbf5;
 }
 
@@ -8,18 +8,22 @@ header {
     background: #CDBB91;
 }
 
-main {
-    margin: 0 15%;
+#logo {
+    vertical-align: middle;
 }
 
-#description{
+main {
+    margin: 0 10%;
+}
+
+#description {
     padding: 20px;
 }
 
 hr {
-    border:none;
-    border-top:10px dotted #9D7B35;
-    width:70%;
+    border: none;
+    border-top: 10px dotted #9D7B35;
+    width: 70%;
     margin: 30px auto;
 }
 
@@ -32,7 +36,7 @@ h1 {
 
 h2 {
     font-family: 'Alegreya', serif;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 h3 {
@@ -41,6 +45,7 @@ h3 {
     text-align: center;
     font-size: xx-large;
     text-transform: uppercase;
+    margin: 50px;
 
 }
 
@@ -55,43 +60,174 @@ p {
     display: flex;
 }
 
-.profile {
-
-}
-
-
 #ingredients {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    align-items: center;
+    justify-items: center;
 }
 
 #ingredients > div {
     text-align: center;
 }
 
-#ingredients > div {
-    width: 25%;
+#preparation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+    "bloc1 bloc2 bloc3 bloc4"
+    "bloc5 bloc6 bloc7 bloc8";
+    color: white;
+    margin-bottom: 100px;
 }
+
+#bloc1 {
+    grid-area: bloc1;
+    background: #C2995C;
+}
+
+#bloc2 {
+    grid-area: bloc2;
+    background: #9D7B35;
+}
+
+#bloc3 {
+    grid-area: bloc3;
+    background: #CDBB91;
+}
+
+#bloc4 {
+    grid-area: bloc4;
+    background: #C2995C;
+}
+
+#bloc5 {
+    grid-area: bloc5;
+}
+
+#bloc6 {
+    grid-area: bloc6;
+    background: #CDBB91;
+}
+
+#bloc7 {
+    grid-area: bloc7;
+    background: #9D7B35;
+}
+
+#bloc8 {
+    grid-area: bloc8;
+}
+
+#preparation > div {
+    padding: 15px;
+    align-self: center;
+    justify-self: center;
+}
+
+#preparation > div > h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+
+}
+
+#preparation > div > p {
+    text-align: justify;
+}
+
 
 #pellicule {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 }
 
 #quote {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+blockquote {
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
 }
 
 #openquote {
-    justify-content: start;
+    align-items: start;
 }
 
 #closequote {
-    justify-content: end;
+    align-items: end;
 }
 
-#avis{
+#avis-container {
+    display: flex;
+
+}
+
+.avis {
+    display: flex;
+    flex-flow: row;
+}
+
+.avis > div {
+    display: flex;
+    flex-flow: column;
+}
+
+.closequote {
+    align-self: flex-end;
+}
+
+.avis > div > blockquote {
+    font-size: large;
+    font-style: normal;
+
+}
+
+.auteur {
+    font-size: large;
+    font-weight: bold;
+}
+
+.photoavis {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+
+#newsletter {
+    background: #184138;
+    color: #CDBB91;
+    padding: 0 15px;
+    margin: 50px auto;
+    width: fit-content;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+
+#newsletter > H5 {
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+#newsletter > form > button {
+    background-color: #CDBB91;
+    color: white;
+    border: none;
+    font-size: 16px;
+    transform: translateX(-5px);
+}
+
+#social {
     display: flex;
     justify-content: center;
 }

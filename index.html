@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Mya Cestele</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Montserrat&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <img src="assets/logo.png"/>
+    <img id="logo" src="assets/logo.png"/>
 </header>
 
 <main>
@@ -31,7 +32,6 @@
                 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
-
 
     <h3 style="color: #9D7B35">Les ingrédients</h3>
     <hr>
@@ -71,36 +71,100 @@
         </div>
     </div>
     <hr>
+
     <h3>La préparation</h3>
     <div id="preparation">
-
+        <div id="bloc1">
+            <H4>étape 1</H4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
+        </div>
+        <div id="bloc2">
+            <H4>étape 2</H4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
+        </div>
+        <div id="bloc3">
+            <H4>étape 3</H4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
+        </div>
+        <div id="bloc4">
+            <H4>étape 4</H4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
+        </div>
+        <div id="bloc5">
+            <img src="assets/etincelles.png" height="166" width="118"/></div>
+        <div id="bloc6">
+            <H4>étape 5</H4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna</p>
+        </div>
+        <div id="bloc7">
+            <H4>étape 6</H4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        </div>
+        <div id="bloc8">
+            <img src="assets/etincelles.png" height="166" width="118"/></div>
     </div>
 
     <h3>Astuce</h3>
     <div id="quote">
-        <img src="assets/openquote" alt="open" id="openquote">
-        <blockquote>Pour que la recette soit encore plus belle et bien meilleure, ajouter une dose de karaoké tout droit sortie du METROPOLE</blockquote>
-        <img src="assets/closequote" alt="close" id="closequote">
-    </div>
+        <img src="assets/openquote.png" height="67" width="86"/>
+        <blockquote>Pour que la recette soit encore plus belle et bien meilleure, ajouter une dose de karaoké tout droit
+            sortie du METROPOLE
+        </blockquote>
+        <img src="assets/closequote.png" height="67" width="86"/></div>
     <img src="assets/pellicule.png" id="pellicule"/>
 
-<h3>Avis sur la recette</h3>
+    <h3>Avis sur la recette</h3>
 
-<div id="avis">
-    <div id="avis1">
-        <img src="" alt="photo avis">
-        <blockquote>Je recommande cette recette</blockquote>
+    <div id="avis-container">
+        <div class="avis">
+            <img src="assets/avis1.png" class="photoavis" alt="photo avis">
+            <div>
+                <img src="assets/openquote.png" height="28" width="35"/>
+                <blockquote>Je recommande cette recette. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</blockquote>
+                <img src="assets/closequote.png" class="closequote" height="28" width="35"/>
+                <p class="auteur">Bérangère Faure - Office de Tourisme</p>
+            </div>
+        </div>
+        <div class="avis">
+            <img src="assets/avis2.png" class="photoavis" alt="photo avis">
+            <div>
+                <img src="assets/openquote.png" height="28" width="35"/>
+                <blockquote>Je recommande cette recette. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</blockquote>
+                <img src="assets/closequote.png" class="closequote" height="28" width="35"/>
+                <p class="auteur">Baptiste Rollet - Le petit Bulletin</p>
+            </div>
+        </div>
     </div>
-    <div id="avis2">
-        <img src="" alt="photo avis">
-        <blockquote>Je recommande cette recette</blockquote>
-    </div>
-</div>
 
 </main>
- <footer>
 
- </footer>
+<footer>
+    <div id="newsletter">
+        <H5>Newsletter</H5>
+        <form action="#">
+            <input type="email" placeholder="Entrez votre adresse e-mail"/>
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+
+    <div id="social">
+        <a href="https://linkedin.com">
+            <img src="assets/in.png" height="60" width="68"/>
+        </a>
+        <a href="https://instagram.com">
+            <img src="assets/insta.png" height="66" width="78"/>
+        </a>
+        <a href="https://facebook.com">
+            <img src="assets/fb.png" height="61" width="37"/>
+        </a>
+    </div>
+
+</footer>
 
 </body>
 
