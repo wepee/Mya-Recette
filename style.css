@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    background: #fffbf5;
+}
+
+header {
+    padding: 10px;
+    background: #CDBB91;
+}
+
+main {
+    margin: 0 15%;
+}
+
+hr {
+    border:none;
+    border-top:10px dotted #9D7B35;
+    width:70%;
+}
+
+h1 {
+    color: #184138;
+    font-family: "Bodoni MT";
+    text-transform: uppercase;
+    font-size: xxx-large;
+}
+
+h2 {
+    font-family: 'Alegreya', serif;
+    font-size: x-large;
+}
+
+h3 {
+    font-family: 'Allegreya Medium';
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero {
+    padding: 50px;
+    display: flex;
+}
+
+.profile {
+
+}
+
+
+#ingredients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ingredients > div {
+    text-align: center;
+}
+
+#ingredients > div {
+    width: 25%;
+}
+
+#quote {
+    display: flex;
+    justify-content: space-around;
+}
+
+#openquote {
+    justify-content: start;
+}
+
+#closequote {
+    justify-content: end;
+}
